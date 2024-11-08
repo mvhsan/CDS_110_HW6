@@ -7,8 +7,6 @@ import matplotlib.pyplot as plt
 def ctrl_linear(state:np.ndarray,
                 state_d:np.ndarray) -> np.ndarray:
 
-    K_E, K_E_DOT, K_THETA, K_OMEGA, K_P = 1.0, 0.2, 2.0, 0.1, 1.0
-
     p_I_x, p_I_y, theta, v_B_x, v_B_y, omega = state
     p_d_I_x, p_d_I_y, theta_d, v_d_I_x, v_d_I_y, omega_d = state_d
 
